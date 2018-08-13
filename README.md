@@ -9,7 +9,7 @@ and we want to treat our infrastructure as immutable.
 Clone the repo from this github repository to startup the project, the first thing you will want to do is read the README.
 
 ```
-:heavy_check_mark: Thats a check if you are reading this.
+✓ Thats a check if you are reading this.
 ```
 
 This project uses packer and uses the cloud to build the image, one of the creed when we started the watchmen project was to ensure
@@ -34,7 +34,8 @@ set-executionpolicy unrestricted -s cu
 
 ```cmd
 scoop bucket add extras
-scoop install packer azure-cli python@3.7.0 
+scoop bucket add watchmen-test https://github.com/watchmen-test/scoop-bucket
+scoop install packer azure-cli python@3.7.0 json2hcl jq
 pip install --user pipenv
 ```
 
